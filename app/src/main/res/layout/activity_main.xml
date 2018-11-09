@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.antoine.quizanimaux.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonFalse"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="163dp" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonFalse"
+        android:layout_centerHorizontal="true"
+        android:text="Suivant"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="34dp" />
+
+    <Button
+        android:id="@+id/buttonFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonTrue"
+        android:layout_alignBottom="@+id/buttonTrue"
+        android:layout_toEndOf="@+id/buttonNext"
+        android:text="Faux"
+        tools:layout_editor_absoluteX="236dp" />
+
+    <Button
+        android:id="@+id/buttonTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/buttonNext"
+        android:text="Vrai"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="232dp" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idLLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6b3adad"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.antoine.quizanimaux.Menu">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="150dp"
+        android:gravity="top"
+        android:text="Quizzzzzzzzzzz! "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:textColor="#4095f6" />
+
+    <LinearLayout
+        android:id="@+id/idLLayout2"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonManage"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/my_button_bg"
+            android:text="Gestion des quiz" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonOptions"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonManage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Options" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Jouer" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/my_button_bg"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+</LinearLayout>
